@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>易购商城</title>
+    <link rel="stylesheet" href="lib/weui/css/weui.css">
+    <link rel="stylesheet" href="lib/weui/css/jquery-weui.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/jquery/jquery-2.1.4.js"></script>
+    <script src="lib/weui/js/jquery-weui.js"></script>
+    <script src="lib/weui/js/fastclick.js"></script>
+    <script src="lib/weui/js/swiper.js"></script>
+    <script src="lib/validate/jquery.validate.js"></script>
+    <script src="lib/validate/validate-rule.js"></script>
+
+    <!--图片延迟加载-->
+    <script src="lib/lazyload/jquery.lazyload.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group index-page">
+        <div class="weui-page weui-page-current">
+            <header class="weui-header search">
+                <a href="" class="search-input">
+                    <div class="search-input-text">
+                        <i class="icon icon-search"></i>
+                    </div>
+                </a>
+            </header>
+            <div class="weui-content navbar weui-pull-to-refresh weui-infinite">
+                <!--下拉提示-->
+                <div class="weui-pull-to-refresh__layer">
+                    <div class='weui-pull-to-refresh__arrow'></div>
+                    <div class='weui-pull-to-refresh__preloader'></div>
+                    <div class="down">下拉刷新</div>
+                    <div class="up">释放刷新</div>
+                    <div class="refresh">正在刷新</div>
+                </div>
+                <!--banner-->
+                <div class="swiper-container banner" id="banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/slider/banner.jpg" width="100%" height="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/slider/banner.jpg" width="100%" height="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/slider/banner.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!--nav-->
+                <div class="swiper-container nav" id="nav">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="weui-icon-group">
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="weui-icon-group">
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                                <a class="weui-icon-col">
+                                    <div class="iconBox">
+                                        <!--<i class="icon icon-search"></i>-->
+                                    </div>
+                                    <div class="text">推荐分类</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--滚动条-->
+                    <div class="swiper-pagination swiper-pagination-progress">
+                        <span class="swiper-pagination-progressbar"></span>
+                    </div>
+                </div>
+                <div class="goods-list-group">
+                    <div class="title"><h5>推荐列表</h5></div>
+                    <div class="weui-goods-list">
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <a href="">
+                                    <div class="name">商品名称</div>
+                                </a>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <span class="buy">
+                                        <i class="icon icon-add"></i>
+                                        <span class="sum">1</span>
+                                        <i class="icon icon-sub"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <a href="">
+                                    <div class="name">商品名称</div>
+                                </a>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <span class="buy">
+                                        <i class="icon icon-add"></i>
+                                        <span class="sum">1</span>
+                                        <i class="icon icon-sub"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <a href="">
+                                    <div class="name">商品名称</div>
+                                </a>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <span class="buy">
+                                        <i class="icon icon-add"></i>
+                                        <span class="sum">1</span>
+                                        <i class="icon icon-sub"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-loadmore" style="display: none">
+                    <i class="weui-loading"></i>
+                    <span class="weui-loadmore__tips">正在加载</span>
+                </div>
+            </div>
+            <!--底部导航-->
+            <div class="weui-tabbar">
+                <a href="javascript:;" class="weui-tabbar__item home weui-bar__item--on">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-search"></i>
+                    </div>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item intro ">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-search"></i>
+                    </div>
+                    <p class="weui-tabbar__label">推荐分类</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item buy ">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-search"></i>
+                    </div>
+                    <p class="weui-tabbar__label">商家列表</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item help">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-search"></i>
+                    </div>
+                    <p class="weui-tabbar__label">购物车</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item center">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-search"></i>
+                    </div>
+                    <p class="weui-tabbar__label">我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+        /*轮播*/
+        $("#banner").swiper({
+            loop: true,
+            autoplay: 2500,
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false
+        });
+        /*菜单*/
+        $("#nav").swiper({
+            paginationType: 'progress'
+        });
+
+
+        /*下拉刷新*/
+        $('.weui-content').pullToRefresh(30).on("pull-to-refresh", function() {
+            setTimeout(function() {
+                $('.weui-content').pullToRefreshDone();
+            }, 2000);
+        });
+
+        /**/
+
+
+        /*滚动加载*/
+        /*var loading = false;  //状态标记
+        var i=0;
+        $('.weui-content').infinite(0).on("infinite", function() {
+            if(i==4){
+                $.toast('没有数据了','text');
+                $('.weui-content').destroyInfinite();
+                $('.weui-loadmore').hide();
+            }
+            if(loading) return false;
+            loading = true;
+            setTimeout(function() {
+                $(".content-padded").append("<p> 我是新加载的内容 <br>我是新加载的内容 我是新加载的内容 我是新加载的内容 我是新加载的内容 我是新加载的内容 我是新加载的内容 </p>");
+                loading = false;
+                i++;
+            }, 1000);   //模拟延迟
+        });*/
+
+        $('.weui-goods-item .buy .icon-add').on('click',function () {
+            $(this).parent('.buy').find('.sum').css({'display':'inline-block'});
+            $(this).parent('.buy').find('.icon-sub').show();
+        });
+
+    })
+</script>
+</body>
+</html>
