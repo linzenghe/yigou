@@ -508,7 +508,36 @@ ul,li{
     line-height: 50px;
 }
 /*个人中心*/
-
+.center-header{
+    background: #fff;
+    position: relative;
+    padding-top: 2rem;
+}
+.center-header .opt{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+.center-header .opt a{
+    display: inline-block;
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+    margin-left: 0.75rem;
+}
+.center-header .userInfo .face{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f4f4f4;
+}
+.center-header .userInfo .face img{
+    width: 100%;
+}
+.center-header .userInfo .name{
+    font-size: 0.75rem;
+}
 
 
 
