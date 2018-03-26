@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>易购商城</title>
+    <link rel="stylesheet" href="lib/weui/css/weui.css">
+    <link rel="stylesheet" href="lib/weui/css/jquery-weui.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/jquery/jquery-2.1.4.js"></script>
+    <script src="lib/weui/js/jquery-weui.js"></script>
+    <script src="lib/weui/js/fastclick.js"></script>
+    <script src="lib/weui/js/swiper.js"></script>
+    <script src="lib/validate/jquery.validate.js"></script>
+    <script src="lib/validate/validate-rule.js"></script>
+
+    <!--图片延迟加载-->
+    <script src="lib/lazyload/jquery.lazyload.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group myHashrate-page">
+        <div class="weui-page weui-page-current">
+            <header class="weui-header header_ora">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);">
+                        <i class="icon icon-back"></i>
+                    </a>
+                </div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="hashRateBox">
+                    <div class="hashRate_h text-center">
+                        <h4>我的算力</h4>
+                        <p>邀请好友消费每日算力加速</p>
+                    </div>
+                    <div class="hashRate_b">
+                        <div class="weui-progress">
+                            <div class="weui-progress__bar">
+                                <div class="weui-progress__inner-bar js_progress" style="width: 80%;">
+                                    <div class="tip"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hashFt clearfix">
+                            <span class="pull-left">我的算力</span>
+                            <span class="pull-right">100</span>
+                        </div>
+                        <div class="status">
+                            <p>还需要50点算力即可贡献</p>
+                        </div>
+                    </div>
+
+                    <div class="hashRate_f">
+                        <p>提示：每日算力的计算方式！<a class="detail">查看详情</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+</body>
+</html>

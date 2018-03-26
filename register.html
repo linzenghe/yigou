@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>易购商城</title>
+    <link rel="stylesheet" href="lib/weui/css/weui.css">
+    <link rel="stylesheet" href="lib/weui/css/jquery-weui.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/jquery/jquery-2.1.4.js"></script>
+    <script src="lib/weui/js/jquery-weui.js"></script>
+    <script src="lib/weui/js/fastclick.js"></script>
+    <script src="lib/weui/js/swiper.js"></script>
+    <script src="lib/validate/jquery.validate.js"></script>
+    <script src="lib/validate/validate-rule.js"></script>
+
+    <!--图片延迟加载-->
+    <script src="lib/lazyload/jquery.lazyload.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group forget-page">
+        <div class="weui-page  weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">注册</div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="resLog_panel">
+                    <form class="form" role="form" id="loginFrom">
+                        <div class="item">
+                            <input placeholder="请输入手机号" class="item_input" type="text">
+                        </div>
+                        <div class="item vesCode">
+                            <input placeholder="请输入验证码" class="item_input" type="text">
+                            <span class="sendVeCode">获取验证码</span>
+                        </div>
+                        <div class="item">
+                            <input placeholder="请输入密码" class="item_input" type="password">
+                        </div>
+                        <div class="submit-item">
+                            <button class="weui-btn weui-btn_primary submit-btn">注册并登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+</body>
+</html>

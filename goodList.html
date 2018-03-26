@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>易购商城</title>
+    <link rel="stylesheet" href="lib/weui/css/weui.css">
+    <link rel="stylesheet" href="lib/weui/css/jquery-weui.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/jquery/jquery-2.1.4.js"></script>
+    <script src="lib/weui/js/jquery-weui.js"></script>
+    <script src="lib/weui/js/fastclick.js"></script>
+    <script src="lib/weui/js/swiper.js"></script>
+    <script src="lib/validate/jquery.validate.js"></script>
+    <script src="lib/validate/validate-rule.js"></script>
+
+    <!--图片延迟加载-->
+    <script src="lib/lazyload/jquery.lazyload.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group goodsList-page">
+        <div class="weui-page weui-page-current">
+            <header class="weui-header search">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);">
+                        <i class="icon icon-back"></i>
+                    </a>
+                </div>
+                <a href="" class="search-input">
+                    <div class="search-input-text">
+                        <i class="icon icon-search"></i>输入关键字搜索
+                    </div>
+                </a>
+            </header>
+            <div class="sort-wrap">
+                <div class="item" ><span class="text">最新商品</span>
+                    <span class="sorting">
+                        <i class="icon icon-arrow_drop"></i>
+                        <i class="icon icon-arrow_down"></i>
+                    </span>
+                </div>
+                <div class="item text-center"><span class="text">好评优先</span>
+                    <span class="sorting">
+                        <i class="icon icon-arrow_drop"></i>
+                        <i class="icon icon-arrow_down"></i>
+                    </span>
+                </div>
+                <div class="item text-right" ><span class="text">销量优先</span>
+                    <span class="sorting">
+                        <i class="icon icon-arrow_drop"></i>
+                        <i class="icon icon-arrow_down"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="weui-content navbar" style="top: 4.4rem">
+                <div class="goods-list-group" style="margin-top: 0">
+                    <div class="weui-goods-list">
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                        <i class="icon icon-star_none"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                        <i class="icon icon-star_none"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                        <i class="icon icon-star_none"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                        <i class="icon icon-star_none"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                        <i class="icon icon-star_none"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-goods-item">
+                            <a href="">
+                                <div class="image">
+                                    <img src="images/goods.jpg">
+                                </div>
+                            </a>
+                            <div class="detail">
+                                <div href="" class="infoBox">
+                                    <a class="name">17款Apple/苹果 13英寸：MacBook Pro 256GB 256GB 256GB 256GB256GB 256GB</a>
+                                    <div class="star">
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_full"></i>
+                                        <i class="icon icon-star_half"></i>
+                                        <i class="icon icon-star_none"></i>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="text">￥123.<small>00</small></span>
+                                    <div class="buy weui-count">
+                                        <a class="weui-count__btn weui-count__decrease"></a>
+                                        <input class="weui-count__number" readonly type="number" value="0">
+                                        <a class="weui-count__btn weui-count__increase"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-loadmore" style="display: none">
+                    <i class="weui-loading"></i>
+                    <span class="weui-loadmore__tips">正在加载</span>
+                </div>
+            </div>
+            <div class="weui-tabbar goodsList-footer">
+                <a href="" class="cart">
+                    <i class="icon icon-cart"></i>
+                    <i class="sum">1</i>
+                </a>
+                <div class="price">￥700.<small>22</small></div>
+                <a class="buy-btn">去结算</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+</body>
+</html>
