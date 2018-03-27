@@ -295,7 +295,25 @@
 
     <script type="text/javascript">
         $(function () {
-
+            var MAX = 99, MIN = 0;
+            $('.weui-count__decrease').click(function (e) {
+                var $input = $(e.currentTarget).parent().find('.weui-count__number');
+                var number = parseInt($input.val() || "0") - 1
+                if (number == MIN){
+                    number = MIN;
+                    $(this).closest('.buy').removeClass('current');
+                }
+                $input.val(number)
+            });
+            $('.weui-count__increase').click(function (e) {
+                if(!$(this).closest('.buy').hasClass('current')){
+                    $(this).closest('.buy').addClass('current');
+                }
+                var $input = $(e.currentTarget).parent().find('.weui-count__number');
+                var number = parseInt($input.val() || "0") + 1
+                if (number > MAX) number = MAX;
+                $input.val(number)
+            })
         })
     </script>
 </body>

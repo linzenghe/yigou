@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>易购商城</title>
+    <link rel="stylesheet" href="lib/weui/css/weui.css">
+    <link rel="stylesheet" href="lib/weui/css/jquery-weui.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/jquery/jquery-2.1.4.js"></script>
+    <script src="lib/weui/js/jquery-weui.js"></script>
+    <script src="lib/weui/js/fastclick.js"></script>
+    <script src="lib/weui/js/swiper.js"></script>
+    <script src="lib/validate/jquery.validate.js"></script>
+    <script src="lib/validate/validate-rule.js"></script>
+
+    <!--图片延迟加载-->
+    <script src="lib/lazyload/jquery.lazyload.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group category-page">
+        <div class="weui-page weui-page-current">
+            <header class="weui-header search">
+                <a href="" class="search-input">
+                    <div class="search-input-text">
+                        <i class="icon icon-search"></i>输入关键字搜索
+                    </div>
+                </a>
+            </header>
+            <div class="weui-content navbar">
+                <div class="fui-fullHigh-group category-panel">
+                    <div class="fui-fullHigh-item menu" id="tab">
+                        <nav data-id="0" class="on">服装</nav>
+                        <nav data-id="1">日用品</nav>
+                        <nav data-id="2">wade系列</nav>
+                        <nav data-id="3">小玉系列</nav>
+                        <nav data-id="4">詹姆斯系列</nav>
+                        <nav data-id="5">分类</nav>
+                        <nav data-id="6">分类</nav>
+                        <nav data-id="7">分类</nav>
+                    </div>
+                    <div class="fui-fullHigh-item container" style="position: relative">
+                        <div id="cateContainer">
+                            <div class="categoryItem">
+                                <div class="category_title">女装大佬</div>
+                                <div class="fui-cate-group fui-row">
+                                    <div class="fui-col-4">
+                                        <a href="" class="fui-cate-item">
+                                            <div class="image">
+                                                <img src="images/cate_img.png">
+                                            </div>
+                                            <div class="name text-center">推荐分类</div>
+                                        </a>
+                                    </div>
+                                    <div class="fui-col-4">
+                                        <a href="" class="fui-cate-item">
+                                            <div class="image">
+                                                <img src="images/cate_img.png">
+                                            </div>
+                                            <div class="name text-center">推荐分类</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center hide">
+                                <img src="images/none.png" width="60%" style="max-width: 300px;">
+                                <p style="color: #999">没有查询到商品~</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--底部导航-->
+            <div class="weui-tabbar">
+                <a href="javascript:;" class="weui-tabbar__item home weui-bar__item--on">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-index"></i>
+                    </div>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item intro ">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-categrory"></i>
+                    </div>
+                    <p class="weui-tabbar__label">推荐分类</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item buy ">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-shop"></i>
+                    </div>
+                    <p class="weui-tabbar__label">商家列表</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item help">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-cart"></i>
+                    </div>
+                    <p class="weui-tabbar__label">购物车</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item center">
+                    <div class="weui-tabbar__icon">
+                        <i class="icon icon-wode"></i>
+                    </div>
+                    <p class="weui-tabbar__label">我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+
+    })
+</script>
+</body>
+</html>
